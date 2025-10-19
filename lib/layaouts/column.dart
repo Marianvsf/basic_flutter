@@ -6,6 +6,8 @@ class ColumnExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
       children: [Text('Hola')],
     );
   }
