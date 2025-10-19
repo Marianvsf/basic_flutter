@@ -1,4 +1,5 @@
 import 'package:basic_flutter/components/text.dart';
+import 'package:basic_flutter/components/textfield.dart';
 import 'package:basic_flutter/layaouts/column.dart';
 import 'package:basic_flutter/layaouts/row.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: TextExample(),
+        body: TextfieldExample(),
       ),
     );
   }
