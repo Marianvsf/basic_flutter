@@ -1,9 +1,9 @@
-import 'package:basic_flutter/components/button.dart';
+//import 'package:basic_flutter/components/button.dart';
 import 'package:basic_flutter/components/image.dart';
-import 'package:basic_flutter/components/text.dart';
-import 'package:basic_flutter/components/textfield.dart';
-import 'package:basic_flutter/layaouts/column.dart';
-import 'package:basic_flutter/layaouts/row.dart';
+//import 'package:basic_flutter/components/text.dart';
+//import 'package:basic_flutter/components/textfield.dart';
+// import 'package:basic_flutter/layaouts/column.dart';
+// import 'package:basic_flutter/layaouts/row.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +15,18 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Mi App"),
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
+          actions: [IconButton(onPressed: () {}, icon: Icon(Icons.abc))],
+        ),
+        backgroundColor: Colors.lightBlueAccent,
         body: ImageExample(),
+        floatingActionButton:
+            FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
       ),
     );
   }
