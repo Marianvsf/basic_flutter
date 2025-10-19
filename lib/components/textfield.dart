@@ -37,8 +37,10 @@ class TextfieldExample extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: TextField(
+            maxLines: 3,
+            maxLength: 250,
             decoration: InputDecoration(
                 hintText: "Introduce tu comentario",
                 prefixIcon: Icon(Icons.search),
