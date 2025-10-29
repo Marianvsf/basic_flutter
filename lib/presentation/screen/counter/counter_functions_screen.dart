@@ -48,6 +48,7 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
             FloatingActionButton(
             shape: const StadiumBorder(),
               onPressed: () {
+                if (clickCounter == 0 ) return;
                 clickCounter -= 1;
                 setState(() {});
               },
