@@ -33,12 +33,27 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            clickCounter += 1;
-            setState(() {});
-          },
-        child: const Icon(Icons.plus_one)
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              shape: const StadiumBorder(),
+              onPressed: () {
+                clickCounter += 1;
+                setState(() {});
+              },
+            child: const Icon(Icons.plus_one)
+            ),
+            const SizedBox(height: 10,),
+            FloatingActionButton(
+            shape: const StadiumBorder(),
+              onPressed: () {
+                clickCounter -= 1;
+                setState(() {});
+              },
+            child: const Icon(Icons.exposure_minus_1_outlined)
+            ),
+          ],
         )
         );
   }
