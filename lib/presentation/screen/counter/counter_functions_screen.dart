@@ -50,7 +50,7 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
 class CustomButton extends StatelessWidget {
 
   final IconData icon;
-  //final onPressed
+  final VoidCallback onPressed;
 
   const CustomButton({
     super.key, required this.icon,
