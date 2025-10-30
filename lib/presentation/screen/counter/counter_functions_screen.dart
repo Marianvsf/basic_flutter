@@ -42,9 +42,17 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
               setState(() {});
             },),
             const SizedBox(height: 10,),
-            const CustomButton(icon: Icons.plus_one),
+            CustomButton(icon: Icons.plus_one,
+             onPressed: () {
+              clickCounter = 0;
+              setState(() {});
+            },),
             const SizedBox(height: 10,),
-            const CustomButton(icon: Icons.exposure_minus_1_outlined),
+            CustomButton(icon: Icons.exposure_minus_1_outlined,
+            onPressed: () {
+              clickCounter = 0;
+              setState(() {});
+            },),
           ],
         )
         );
