@@ -44,13 +44,13 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
             const SizedBox(height: 10,),
             CustomButton(icon: Icons.plus_one,
              onPressed: () {
-              clickCounter = 0;
+              clickCounter += 1;
               setState(() {});
             },),
             const SizedBox(height: 10,),
             CustomButton(icon: Icons.exposure_minus_1_outlined,
             onPressed: () {
-              clickCounter = 0;
+              clickCounter -= 1;
               setState(() {});
             },),
           ],
@@ -77,14 +77,3 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
-
-
-//  if (clickCounter == 0 ) return;
-//                 clickCounter -= 1;
-//                 setState(() {});
-
-
-// onPressed: () {
-//                 clickCounter += 1;
-//                 setState(() {});
-//               },
