@@ -36,9 +36,11 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
         floatingActionButton: const Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            CustomButton(icon: Icons.refresh_outlined),
+            SizedBox(height: 10,),
             CustomButton(icon: Icons.plus_one),
             SizedBox(height: 10,),
-            CustomButton(icon: Icons.refresh_outlined),
+            CustomButton(icon: Icons.exposure_minus_1),
           ],
         )
         );
